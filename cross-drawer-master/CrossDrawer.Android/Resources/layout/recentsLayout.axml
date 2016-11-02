@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <GridLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/gridLayout1">
+    <ImageButton
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:padding="0dip"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/favButton"
+        android:layout_margin="0dip"
+        android:layout_marginTop="0.0dp"
+        android:layout_column="0"
+      />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView1"
+        local:MvxBind="Text Full_Name "
+        android:paddingTop="40px"
+        android:layout_gravity="center_horizontal"
+        android:layout_column="1" />
+    <ImageButton
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:padding="0dip"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/favButton"
+        android:layout_margin="0dip"
+        android:layout_marginTop="0.0dp"
+        android:layout_column="2" />
+  </GridLayout>
+</LinearLayout>
+<!-- so I believe recents page can be achieved with like a true or false addition to the database, like if true it is favorite, if false, not etc.  -->

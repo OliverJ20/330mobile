@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+    android:background="@android:color/background_light"
+    android:textColor="@android:color/black">
+    <GridLayout
+        android:minWidth="0px"
+        android:minHeight="0px"
+        android:layout_width="match_parent"
+        android:layout_height="212.0dp"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:background="@android:color/holo_blue_bright"
+        android:id="@+id/gridLayout1"
+        android:padding="0dip"
+        android:paddingBottom="10dip"
+        android:layout_marginBottom="20dip">
+        <ImageButton
+            android:src="@drawable/ic_menu_black_24dp"
+            android:padding="0dip"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/menuButton"
+            android:layout_margin="0dip"
+            android:layout_marginTop="0.0dp"
+            android:layout_column="0"
+            android:layout_columnSpan="1" />
+        <ImageButton
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_marginTop="0dip"
+            android:layout_marginLeft="0dip"
+            android:padding="5dip"
+            android:id="@+id/searchButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            local:MvxBind="Click SearchNav" />
+        <TextView
+            android:text="John Doe"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:id="@+id/UserName"
+            android:textColor="@android:color/black"
+            android:layout_margin="20px"
+            android:gravity="center_horizontal"
+            android:layout_columnWeight="150"
+            android:clickable="false"
+            android:editable="false"
+            android:enabled="true" />
+        <Button
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/profile_temp"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:editable="false"
+            android:enabled="true" />
+    </GridLayout>
+    <Button
+        android:text="Request Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SettingsButton"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textSize="30dip"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:editable="false"
+        android:enabled="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:text="Last seen: Break Room at 12:05 PM"
+        android:textSize="15dip"
+        android:textStyle="italic"
+        android:typeface="sans"
+        android:shadowColor="#f0f8ffff"
+        android:layoutDirection="ltr"
+        android:alpha="0.6"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:enabled="true" />
+    
+  
+    <MvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="ItemsSource CoWorkerNames;"
+        local:MvxItemTemplate="@layout/profilelayout"
+        android:id="@+id/mvxListView1"
+        android:clickable="true" />
+</LinearLayout>
