@@ -17,33 +17,16 @@ namespace CrossDrawer.Core
 {
     public class FavoriteViewModel : MvxViewModel
     {
-        /*public ICommand SelectProfileCommand { get
-            {
-                return new MvxCommand<Name>(selectedName => ShowViewModel<ProfileViewModel>(selectedName)); 
-            }
-           } */
+    
            public ICommand SelectProfileCommand { get; private set; }
-
-   
-      ///
-
+        
 
 
         
 
         List<NameAutoCompleteResult> names = new List<NameAutoCompleteResult>();
         private ObservableCollection<Name> coworkerNames = new ObservableCollection<Name>();
-     //   public ICommand ProfileSwitch { get;  private set;}
-    /*  public ICommand ProfileSwitch
-        {
-            get
-            {
-                //return new MvxCommand(() => ShowViewModel<ProfileViewModel>(new { }));
-                return new MvxCommand<FavoriteViewModel>(param => ShowViewModel<ProfileViewModel>(new { parameter = param }));
-            }
-        }*/
-
-    //    SelectProfileCommand = new MvxCommand<Name>(ProfileView => ShowViewModel<ProfileViewModel>(ProfileView));
+  
         private readonly INameDatabase nameDatabase;
         public ObservableCollection<Name> CoWorkerNames
         {

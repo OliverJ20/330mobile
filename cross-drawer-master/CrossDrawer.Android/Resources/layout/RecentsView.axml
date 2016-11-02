@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
-    <MvxListView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="ItemsSource CoWorkerNames; ItemClick SelectProfileCommand"
-        local:MvxItemTemplate="@layout/recentslayout"
-        android:id="@+id/mvxListView1"
-        android:clickable="true" />
+  <MvxListView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="ItemsSource CoWorkerNames; ItemClick SelectProfileCommand"
+      local:MvxItemTemplate="@layout/recentslayout"
+      android:id="@+id/mvxListView1"
+      android:clickable="true" />
 </LinearLayout>

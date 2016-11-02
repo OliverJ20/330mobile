@@ -11,13 +11,22 @@ using System.Linq;
 using System.Text;
 using CrossDrawer.Core.Models;
 using CrossDrawer.Core.Interfaces;
+using CrossDrawer.Core.ViewModels;
 
 namespace CrossDrawer.Core
 {
     public class RecentsViewModel : MvxViewModel
     {
+
+        public ICommand SelectProfileCommand { get; private set; }
+
+
+
+
+
         List<NameAutoCompleteResult> names = new List<NameAutoCompleteResult>();
         private ObservableCollection<Name> coworkerNames = new ObservableCollection<Name>();
+
         private readonly INameDatabase nameDatabase;
         public ObservableCollection<Name> CoWorkerNames
         {
@@ -26,16 +35,21 @@ namespace CrossDrawer.Core
         }
         public ICommand AddNewNameCommand { get; private set; }
 
-        public ICommand SelectProfileCommand { get; private set; }
         public RecentsViewModel(INameDatabase nameDatabase)
         {
             this.nameDatabase = nameDatabase;
+            SelectProfileCommand = new MvxCommand<Name>(selectedName => ShowViewModel<ProfileViewModel>(selectedName));
+
             //      AddNewNameCommand = new MvxCommand(() => ShowViewModel<>)
+
         }
+        // ProfileSwitch = new MvxCommand<CoWorkerNames>(ProfileView => ShowViewModel<ProfileViewModel>(ProfileView));
 
         public void OnResume()
         {
+
             GetCoWorkerNames();
+
         }
         public async void GetCoWorkerNames()
         {
@@ -44,8 +58,24 @@ namespace CrossDrawer.Core
             foreach (var name in names)
             {
                 CoWorkerNames.Add(name);
+                //     ProfileSwitch = new MvxCommand<CoWorkerNames>(ProfileView => ShowViewModel<ProfileViewModel>(ProfileView));
+            }
+
+        }
+        private MvxCommand _ProfileClickedCommand;
+        public IMvxCommand ProfileClickedCommand
+        {
+            get
+            {
+                _ProfileClickedCommand = _ProfileClickedCommand ?? new MvxCommand(() => ShowViewModel<MainViewModel>());
+                return _ProfileClickedCommand;
+                //return ProfileClickedCommand = new MvxCommand<Name>(profileClickedCommand => ShowViewModel<ProfileViewModel>(profileClickedCommand));
+                // return new MvxCommand(() => ShowViewModel<ProfileViewModel>());
             }
         }
+
+
+
 
         //public ICommand SearchNav
         //   {
