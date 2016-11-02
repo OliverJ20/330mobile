@@ -18,14 +18,7 @@ namespace CrossDrawer.Android
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            var ignored = base.OnCreateView(inflater, container, savedInstanceState);
-        //    return this.BindingInflate(Resource.Layout.FavoritesView, null);
-         /*  var V = this.BindingInflate(Resource.Layout.FavoritesView, container, false);
-            var ProfileChange = V.FindViewById<Button>(Resource.Id.ProfileButton);
-            var set = this.CreateBindingSet<FavoritesFragment, FavoriteViewModel>();
-             set.Bind(ProfileChange).To(vm => vm.ProfileSwitch);
-            set.Apply();
-           return V;*/
+            var ignored = base.OnCreateView(inflater, container, savedInstanceState);       
             
              return this.BindingInflate(Resource.Layout.FavoritesView, null);
 
@@ -33,7 +26,7 @@ namespace CrossDrawer.Android
 
         public override void OnResume()
         {
-            // ViewModel.OnResume();
+         
             ((FavoriteViewModel)ViewModel).OnResume();
             base.OnResume();
         }

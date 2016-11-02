@@ -47,17 +47,7 @@ namespace CrossDrawer.Core
         }
         public HomeViewModel()
         {
-            //var nameDatabase = new NameDatabase();
-           // nameDatabase.InsertName(new Models.Name
-          //  {
-           //     First_Name = "Joe",
-           //     Last_Name = "Bloe"
-            //});
-          //  nameDatabase.InsertName(new Models.Name
-          //  {
-             //   First_Name = "jane",
-           //     Last_Name = "Doe"
-           // });
+       
         }
     }
 }

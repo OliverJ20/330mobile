@@ -25,12 +25,12 @@ namespace CrossDrawer.Android
 
 		DrawerLayout _drawerLayout;
 
-       // List<TableItem> tableItems = new List<TableItem>();
+    
 
         protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-            //tableItems.Add(new TableItem(){ ImageResourceId = Resource.Drawable.ic_favorite_black_24dp});
+          
             var nameDatabase = new NameDatabase();
             for (int i = 0; i <= 200; i++)
             {
@@ -49,7 +49,7 @@ namespace CrossDrawer.Android
                 Skill_Three = "C",
 
 
-                // Last_Name = "Bloe"
+              
             });
             nameDatabase.InsertName(new Name
             {
@@ -59,62 +59,62 @@ namespace CrossDrawer.Android
                 Skill_One = "Android",
                 Skill_Two = "IOS",
                 Skill_Three = "Swift",
-                // Last_Name = "doe"
+               
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Calista Stevens",
-                // Last_Name = "doe"
+                
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Goffard Page",
-                // Last_Name = "doe"
+               
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Irene Jerome",
-                // Last_Name = "doe"
+          
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Janes Maynard",
-                // Last_Name = "doe"
+             
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Jim Marlowe",
-                // Last_Name = "doe"
+              
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Josh Moors",
-                // Last_Name = "doe"
+            
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Lyndsea Rain",
-                // Last_Name = "doe"
+               
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Standord Crewe",
-                // Last_Name = "doe"
+         
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Olaf Milton",
-                // Last_Name = "doe"
+               
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Oliver Johnson",
-                // Last_Name = "doe"
+            
             });
             nameDatabase.InsertName(new Name
             {
                 Full_Name = "Jai Spicer"
-                // Last_Name = "doe"
+              
             });
             
            

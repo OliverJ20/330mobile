@@ -39,12 +39,8 @@ namespace CrossDrawer.Core.Databases
             database.Commit();
             return num;
         }
-       // public async Task<int> InsertDepartment(Name department)
-        //{
-         //   var num = database.Insert(department);
-          //  database.Commit();
-           // return num;
-       // }
+       
+       
 
 
 

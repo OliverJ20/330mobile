@@ -30,7 +30,7 @@ namespace CrossDrawer.Core.ViewModels
         public ProfileViewModel(INameDatabase nameDatabase)
         {
             this.nameDatabase = nameDatabase;
-            //      AddNewNameCommand = new MvxCommand(() => ShowViewModel<>)
+            
         }
 
         public void OnResume()
@@ -44,16 +44,7 @@ namespace CrossDrawer.Core.ViewModels
             CoWorkerNames.Clear();
            var filteredNames = names.FirstOrDefault(coworkerNames => coworkerNames.Id == 35);
             CoWorkerNames.Add(filteredNames);
-           // CoWorkerNames.Add(names);
-
-           //  foreach (var name in names)
-          //  {
-            // coworkerNames.Where(coworkerNames => coworkerNames.Id == 1);
-            //coworkerNames.FirstOrDefault();
-            //     names.FirstOrDefault();
-            //coworkerNames.where(name => )
-           //  CoWorkerNames.Add(name);
-           // }
+          
         }
         public void Init (NameAutoCompleteResult parameters)
         {
@@ -68,8 +59,7 @@ namespace CrossDrawer.Core.ViewModels
             get { return profile; }
             set { SetProperty(ref profile, value); }
         }
-        //might need to add things here to populate table data 
-
+       
 
         public override void Start ()
         {
@@ -78,12 +68,6 @@ namespace CrossDrawer.Core.ViewModels
             GetCoWorkerNames();
         }
 
-        //public ICommand SearchNav
-        //   {
-        //       get
-        //     {
-        //         return new MvxCommand(() => ShowViewModel<SearchViewModel>());
-        //     }
-        //  }
+     
     }
 }

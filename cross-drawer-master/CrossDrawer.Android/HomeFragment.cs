@@ -23,13 +23,13 @@ namespace CrossDrawer.Android
             var recButton = v.FindViewById<Button>(Resource.Id.RecentsButton);
             var setButton = v.FindViewById<Button>(Resource.Id.SettingsButton);
             var proButton = v.FindViewById<Button>(Resource.Id.ProfileButton);
-         //   var arrowButton = v.FindViewById<Button>(Resource.Id.favarrow);
+        
             var set = this.CreateBindingSet<HomeFragment, HomeViewModel>();
             set.Bind(favButton).To(vm => vm.FavoritesNav);
             set.Bind(recButton).To(vm => vm.RecentsNav);
             set.Bind(setButton).To(vm => vm.SettingsNav);
             set.Bind(proButton).To(vm => vm.ProfileNav);
-          //  set.Bind(arrowButton).To(vm => vm.ProfileNav);
+        
             set.Apply();
             return v;
         }

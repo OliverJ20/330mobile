@@ -24,10 +24,7 @@ namespace CrossDrawer.Core.Models
         public string Skill_Three { get; set; }
 
 
-        //  public override string ToString()
-        // {
-        //     return string.Format("[Person: ID={0}, FirstName={1}, LastName={2}]", Id, FirstName, LastName);
-        //}
+       
 
 
     }

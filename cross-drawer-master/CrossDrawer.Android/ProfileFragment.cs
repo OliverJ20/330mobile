@@ -22,7 +22,6 @@ namespace CrossDrawer.Android
 
         public override void OnResume()
         {
-            // ViewModel.OnResume();
             ((ProfileViewModel)ViewModel).OnResume();
             base.OnResume();
         }
