@@ -18,28 +18,7 @@ namespace CrossDrawer.Core.ViewModels
         List<NameAutoCompleteResult> names = new List<NameAutoCompleteResult>();
         private ObservableCollection<Name> coworkerNames = new ObservableCollection<Name>();
         private readonly INameDatabase nameDatabase;
-
-
-
-
-    
-       
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public ObservableCollection<Name> CoWorkerNames
         {
             get { return coworkerNames; }
@@ -89,6 +68,8 @@ namespace CrossDrawer.Core.ViewModels
             get { return profile; }
             set { SetProperty(ref profile, value); }
         }
+        //might need to add things here to populate table data 
+
 
         public override void Start ()
         {

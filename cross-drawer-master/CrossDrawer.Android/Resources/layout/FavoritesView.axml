@@ -17,7 +17,7 @@
       android:gravity="center_vertical"
       android:textColor="#fff"
       android:layout_gravity="center_horizontal" />
-    <Mvx.MvxListView
+    <MvxListView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         local:MvxBind="ItemsSource CoWorkerNames; ItemClick SelectProfileCommand"

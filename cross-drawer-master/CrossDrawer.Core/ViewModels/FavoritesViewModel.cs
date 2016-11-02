@@ -55,9 +55,11 @@ namespace CrossDrawer.Core
              public FavoriteViewModel(INameDatabase nameDatabase)
             {
                this.nameDatabase = nameDatabase;
+                SelectProfileCommand = new MvxCommand<Name>(selectedName => ShowViewModel<ProfileViewModel>(selectedName));
+        
         //      AddNewNameCommand = new MvxCommand(() => ShowViewModel<>)
 
-            }
+    }
        // ProfileSwitch = new MvxCommand<CoWorkerNames>(ProfileView => ShowViewModel<ProfileViewModel>(ProfileView));
         
         public void OnResume()
@@ -88,12 +90,9 @@ namespace CrossDrawer.Core
                // return new MvxCommand(() => ShowViewModel<ProfileViewModel>());
             }
         }
-        public FavoriteViewModel()
-        {
+        
 
-
-            SelectProfileCommand = new MvxCommand<NameAutoCompleteResult>(selectedName => ShowViewModel<ProfileViewModel>(selectedName));
-        }
+           
 
         //public ICommand SearchNav
         //   {

@@ -8,10 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gridLayout1">
-        <ImageButton
+        <ImageView
             android:src="@drawable/ic_favorite_black_24dp"
             android:padding="0dip"
-            style="?android:attr/borderlessButtonStyle"
+           
             android:id="@+id/favButton"
             android:layout_margin="0dip"
             android:layout_marginTop="0.0dp"
@@ -24,10 +24,10 @@
             android:paddingTop="40px"
             android:layout_gravity="center_horizontal"
             android:layout_column="1" />
-        <ImageButton
+        <ImageView
             android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
             android:padding="0dip"
-            style="?android:attr/borderlessButtonStyle"
+           
             android:id="@+id/favarrow"
            
           
