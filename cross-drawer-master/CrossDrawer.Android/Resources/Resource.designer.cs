@@ -1509,8 +1509,8 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c000a
 			public const int MvxBindingTagUnique = 2131492874;
 			
-			// aapt resource value: 0x7f0c0052
-			public const int ProfileButton = 2131492946;
+			// aapt resource value: 0x7f0c0058
+			public const int ProfileButton = 2131492952;
 			
 			// aapt resource value: 0x7f0c005a
 			public const int RecentsButton = 2131492954;
@@ -1518,8 +1518,8 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c005b
 			public const int SettingsButton = 2131492955;
 			
-			// aapt resource value: 0x7f0c0058
-			public const int UserName = 2131492952;
+			// aapt resource value: 0x7f0c0057
+			public const int UserName = 2131492951;
 			
 			// aapt resource value: 0x7f0c005f
 			public const int action0 = 2131492959;
@@ -1578,17 +1578,17 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c001a
 			public const int beginning = 2131492890;
 			
-			// aapt resource value: 0x7f0c0071
-			public const int button1 = 2131492977;
+			// aapt resource value: 0x7f0c006f
+			public const int button1 = 2131492975;
+			
+			// aapt resource value: 0x7f0c0073
+			public const int button2 = 2131492979;
+			
+			// aapt resource value: 0x7f0c0074
+			public const int button3 = 2131492980;
 			
 			// aapt resource value: 0x7f0c0075
-			public const int button2 = 2131492981;
-			
-			// aapt resource value: 0x7f0c0076
-			public const int button3 = 2131492982;
-			
-			// aapt resource value: 0x7f0c0077
-			public const int button4 = 2131492983;
+			public const int button4 = 2131492981;
 			
 			// aapt resource value: 0x7f0c002d
 			public const int buttonPanel = 2131492909;
@@ -1596,8 +1596,8 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c0060
 			public const int cancel_action = 2131492960;
 			
-			// aapt resource value: 0x7f0c0074
-			public const int checkBox1 = 2131492980;
+			// aapt resource value: 0x7f0c0072
+			public const int checkBox1 = 2131492978;
 			
 			// aapt resource value: 0x7f0c003b
 			public const int checkbox = 2131492923;
@@ -1632,8 +1632,8 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c005e
 			public const int drawerListView = 2131492958;
 			
-			// aapt resource value: 0x7f0c006f
-			public const int editText1 = 2131492975;
+			// aapt resource value: 0x7f0c006d
+			public const int editText1 = 2131492973;
 			
 			// aapt resource value: 0x7f0c006c
 			public const int editText3 = 2131492972;
@@ -1653,11 +1653,11 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c003a
 			public const int expanded_menu = 2131492922;
 			
-			// aapt resource value: 0x7f0c0055
-			public const int favButton = 2131492949;
+			// aapt resource value: 0x7f0c0054
+			public const int favButton = 2131492948;
 			
-			// aapt resource value: 0x7f0c0057
-			public const int favarrow = 2131492951;
+			// aapt resource value: 0x7f0c0056
+			public const int favarrow = 2131492950;
 			
 			// aapt resource value: 0x7f0c0059
 			public const int favouritesButton = 2131492953;
@@ -1665,8 +1665,8 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c005d
 			public const int frameLayout = 2131492957;
 			
-			// aapt resource value: 0x7f0c0054
-			public const int gridLayout1 = 2131492948;
+			// aapt resource value: 0x7f0c0053
+			public const int gridLayout1 = 2131492947;
 			
 			// aapt resource value: 0x7f0c0004
 			public const int home = 2131492868;
@@ -1692,11 +1692,11 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c0068
 			public const int line3 = 2131492968;
 			
-			// aapt resource value: 0x7f0c0070
-			public const int linearLayout1 = 2131492976;
+			// aapt resource value: 0x7f0c006e
+			public const int linearLayout1 = 2131492974;
 			
-			// aapt resource value: 0x7f0c0072
-			public const int linearLayout2 = 2131492978;
+			// aapt resource value: 0x7f0c0070
+			public const int linearLayout2 = 2131492976;
 			
 			// aapt resource value: 0x7f0c000b
 			public const int listMode = 2131492875;
@@ -1707,17 +1707,14 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c0062
 			public const int media_actions = 2131492962;
 			
-			// aapt resource value: 0x7f0c006d
-			public const int menuButton = 2131492973;
-			
 			// aapt resource value: 0x7f0c001c
 			public const int middle = 2131492892;
 			
 			// aapt resource value: 0x7f0c0015
 			public const int multiply = 2131492885;
 			
-			// aapt resource value: 0x7f0c0053
-			public const int mvxListView1 = 2131492947;
+			// aapt resource value: 0x7f0c0052
+			public const int mvxListView1 = 2131492946;
 			
 			// aapt resource value: 0x7f0c0020
 			public const int never = 2131492896;
@@ -1751,9 +1748,6 @@ namespace CrossDrawer.Android
 			
 			// aapt resource value: 0x7f0c0035
 			public const int scrollView = 2131492917;
-			
-			// aapt resource value: 0x7f0c006e
-			public const int searchButton = 2131492974;
 			
 			// aapt resource value: 0x7f0c0047
 			public const int search_badge = 2131492935;
@@ -1833,11 +1827,11 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c0036
 			public const int textSpacerNoButtons = 2131492918;
 			
-			// aapt resource value: 0x7f0c0056
-			public const int textView1 = 2131492950;
+			// aapt resource value: 0x7f0c0055
+			public const int textView1 = 2131492949;
 			
-			// aapt resource value: 0x7f0c0073
-			public const int textView2 = 2131492979;
+			// aapt resource value: 0x7f0c0071
+			public const int textView2 = 2131492977;
 			
 			// aapt resource value: 0x7f0c0065
 			public const int time = 2131492965;
@@ -1848,8 +1842,8 @@ namespace CrossDrawer.Android
 			// aapt resource value: 0x7f0c0031
 			public const int title_template = 2131492913;
 			
-			// aapt resource value: 0x7f0c0078
-			public const int toolbar = 2131492984;
+			// aapt resource value: 0x7f0c0076
+			public const int toolbar = 2131492982;
 			
 			// aapt resource value: 0x7f0c0030
 			public const int topPanel = 2131492912;

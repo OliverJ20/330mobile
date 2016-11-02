@@ -11,12 +11,10 @@
         <ImageView
             android:src="@drawable/ic_favorite_black_24dp"
             android:padding="0dip"
-           
             android:id="@+id/favButton"
             android:layout_margin="0dip"
             android:layout_marginTop="0.0dp"
             android:layout_column="0" />
-      
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/textView1"
@@ -27,11 +25,7 @@
         <ImageView
             android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
             android:padding="0dip"
-           
             android:id="@+id/favarrow"
-           
-          
-          
             android:layout_margin="0dip"
             android:layout_marginTop="0.0dp"
             android:layout_column="2" />

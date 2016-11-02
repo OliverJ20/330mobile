@@ -26,6 +26,7 @@ namespace CrossDrawer.Core
         }
         public ICommand AddNewNameCommand { get; private set; }
 
+        public ICommand SelectProfileCommand { get; private set; }
         public RecentsViewModel(INameDatabase nameDatabase)
         {
             this.nameDatabase = nameDatabase;
